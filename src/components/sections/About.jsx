@@ -1,8 +1,25 @@
 import { RevealOnScroll } from "./RevealOnScroll";
 
 export const About = () => {
-  const frontendSkills = ["React", "TypeScript", "JavaScript", "TailwindCSS"];
-  const backendSkills = ["Node.js", "MongoDB", "AWS"];
+  const frontendSkills = [
+    "React",
+    "TypeScript",
+    "JavaScript (ES6+)",
+    "TailwindCSS",
+    "CSS",
+    "Web accessibility ",
+    "REST API",
+    "OOP",
+    "Algorithms",
+  ];
+  const backendSkills = [
+    "Node.js",
+    "MongoDB",
+    "JWT",
+    "Git",
+    "Debbuging",
+    "JSON",
+  ];
 
   return (
     <section
@@ -100,7 +117,41 @@ export const About = () => {
                     </a>
                   </div>
                   <p className="text-sm text-gray-300 mt-1 ml-5">
-                    Some skills will be shown here
+                    JavaScript fundamentals, ES6+ syntax, DOM manipulation,
+                    event handling, asynchronous JavaScript (Promises,
+                    async/await), API interaction (fetch), data structures,
+                    debugging, error handling, object-oriented programming,
+                    functional programming, modern toolchains (Webpack, Babel),
+                    and project-based learning
+                  </p>
+                </li>
+                <li className="flex flex-col">
+                  <div className="flex items-baseline">
+                    <span className="text-white mr-2">•</span>
+
+                    <a
+                      href="https://www.linkedin.com/learning/html-essential-training-22425519/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-lg font-semibold bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent
+             hover:underline hover:decoration-blue-500 underline-offset-2 transition"
+                    >
+                      HTML Essential Training{" "}
+                    </a>
+
+                    <a
+                      href="https://www.linkedin.com/learning/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="ml-2 text-sm text-gray-400 hover:text-white hover:underline"
+                    >
+                      (LinkedIn Learning)
+                    </a>
+                  </div>
+                  <p className="text-sm text-gray-300 mt-1 ml-5">
+                    Semantic HTML, document structure, links and navigation,
+                    responsive images, multimedia embedding, forms and
+                    validation, accessibility, DOM basics, HTML debugging
                   </p>
                 </li>
               </ul>
