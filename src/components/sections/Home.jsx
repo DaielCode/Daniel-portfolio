@@ -11,18 +11,15 @@ export const Home = () => {
           <h1 className="text-5xl md:text-7xl font-bold my-6 bg-gradient-to-l     from-blue-500 to-purple-600 inline-block leading-tight bg-clip-text text-transparent ">
             Welcome to my portfolio{" "}
           </h1>
-          <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
+          <p className="text-gray-350 text-xl mb-8 max-w-2xl mx-auto leading-relaxed font-semibold italic">
             {" "}
-            Proactive and open-minded Computer Science student with a strong
-            foundation in JavaScript and basic knowledge of CSS and HTML.
-            Skilled in DOM manipulation and API integration. Familiar with
-            fundamental data structures and algorithms with a deep interest in
-            software development. Eager to apply academic knowledge in
-            real-world scenarios and contribute to a dynamic IT team. Passionate
-            about writing clean, maintainable code and committed to continuous
-            growth within a professional development environment. Actively
-            seeking a JavaScript internship to contribute to a forward-thinking
-            team and gain practical experience in front-end development.
+            Proactive and open-minded Computer Science student eager to apply
+            academic knowledge in real-world scenarios and contribute to a
+            dynamic IT team. Actively seeking a JavaScript internship to
+            contribute to a forward-thinking team and gain practical experience
+            in front-end development. Passionate about writing clean,
+            maintainable code and committed to continuous growth within a
+            professional development environment.
           </p>
           <div className="flex justify-center space-x-4">
             <a
