@@ -29,12 +29,20 @@ export const Projects = () => {
               </div>
               <div className="flex justify between items-center">
                 <a
-                  href="https://github.com/"
+                  href="https://github.com/DaielCode/BankApp"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-4-- hover:text-blue-300 trasition-colors"
                 >
                   View Project →{" "}
+                </a>
+                <a
+                  href="https://daielcode.github.io/BankApp/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-4-- hover:text-blue-300 trasition-colors"
+                >
+                  View Project in Browser →{" "}
                 </a>
               </div>
             </div>
