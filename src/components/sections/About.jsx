@@ -13,8 +13,8 @@ export const About = () => {
     "Algorithms",
   ];
   const backendSkills = [
-    "Node.js",
-    "MongoDB",
+    "Node.js(Basic)",
+    "MongoDB(Basic)",
     "JWT",
     "Git",
     "Debbuging",
