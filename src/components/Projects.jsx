@@ -36,6 +36,9 @@ export const Projects = () => {
                 >
                   View Project →{" "}
                 </a>
+              </div>
+              <div>
+                {" "}
                 <a
                   href="https://daielcode.github.io/BankApp/"
                   target="_blank"
