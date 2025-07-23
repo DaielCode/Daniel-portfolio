@@ -11,7 +11,7 @@ export const Home = () => {
           <h1 className="text-5xl md:text-7xl font-bold my-6 bg-gradient-to-l     from-blue-500 to-purple-600 inline-block leading-tight bg-clip-text text-transparent ">
             Welcome to my portfolio{" "}
           </h1>
-          <p className="text-gray-350 text-xl mb-8 max-w-2xl mx-auto leading-relaxed font-semibold italic">
+          <p className="text-gray-400 text-xl mb-8 max-w-2xl mx-auto leading-relaxed font-semibold italic">
             {" "}
             Proactive and open-minded Computer Science student eager to apply
             academic knowledge in real-world scenarios and contribute to a

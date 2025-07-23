@@ -16,7 +16,7 @@ export const About = () => {
           </h2>
 
           <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
-            <p className="text-gray-300 mb-6">
+            <p className="text-gray-400 mb-6  leading-relaxed font-semibold italic">
               Passionate developer with expertise in building scalable web
               applications and creating innovative solutions. With Strong
               foundation in JavaScript and basic knowledge of CSS and HTML.
