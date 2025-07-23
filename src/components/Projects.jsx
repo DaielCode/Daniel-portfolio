@@ -210,12 +210,23 @@ export const Projects = () => {
               </div>
               <div className="flex justify between items-center">
                 <a
-                  href="https://github.com/"
+                  href="https://github.com/DaielCode/Guess-Number"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-4-- hover:text-blue-300 trasition-colors"
                 >
                   View Project →{" "}
+                </a>
+              </div>
+              <div>
+                {" "}
+                <a
+                  href="https://daielcode.github.io/Guess-Number/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-4-- hover:text-blue-300 trasition-colors"
+                >
+                  View Project in Browser →{" "}
                 </a>
               </div>
             </div>
@@ -248,12 +259,23 @@ export const Projects = () => {
               </div>
               <div className="flex justify between items-center">
                 <a
-                  href="https://github.com/"
+                  href="https://github.com/DaielCode/BankApp"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-4-- hover:text-blue-300 trasition-colors"
                 >
                   View Project →{" "}
+                </a>
+              </div>
+              <div>
+                {" "}
+                <a
+                  href="https://daielcode.github.io/Bankist-DOM/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-4-- hover:text-blue-300 trasition-colors"
+                >
+                  View Project in Browser →{" "}
                 </a>
               </div>
             </div>
