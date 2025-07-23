@@ -50,14 +50,32 @@ export const Projects = () => {
               </div>
             </div>
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
-              <h3 className="text-xl font-bold mb-2">Bankist App</h3>
-              <p className="text-gray-400 mb-4">Describing the project</p>
+              <h3 className="text-xl font-bold mb-2">
+                Advanced Bank App (In progres)
+              </h3>
+              <p className="text-gray-400 mb-4">
+                Is a comprehensive demonstration of full-stack development,
+                integrating frontend and backend technologies to create a secure
+                and functional banking application. It showcases proficiency in
+                modern web development practices, including secure
+                authentication, data management, and responsive design.
+              </p>
               <div className="flex flex-wrap gap-2 mb-4">
-                {["React", "Node.js", "AWS"].map((tech, key) => (
+                {[
+                  "MongoDB",
+                  "Node.js",
+                  "Express.JS",
+                  "JWT",
+                  "HTML",
+                  "CSS",
+                  "JavaScript",
+                  "RESTful APIs",
+                  "Security",
+                ].map((tech, key) => (
                   <span
                     key={key}
                     className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
-                                    hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition
+                                    hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition whitespace-nowrap
                     "
                   >
                     {tech}
@@ -66,23 +84,12 @@ export const Projects = () => {
               </div>
               <div className="flex justify between items-center">
                 <a
-                  href="https://github.com/DaielCode/BankApp"
+                  href="https://github.com/DaielCode/Advanced_Bank_Aplication"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-4-- hover:text-blue-300 trasition-colors"
                 >
                   View Project →{" "}
-                </a>
-              </div>
-              <div>
-                {" "}
-                <a
-                  href="https://daielcode.github.io/BankApp/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-4-- hover:text-blue-300 trasition-colors"
-                >
-                  View Project in Browser →{" "}
                 </a>
               </div>
             </div>
@@ -135,18 +142,19 @@ export const Projects = () => {
             </div>
 
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
-              <h3 className="text-xl font-bold mb-2">Pig Game</h3>
+              <h3 className="text-xl font-bold mb-2">React Portfolio</h3>
               <p className="text-gray-400 mb-4">
-                Classic two-player Pig Dice game using HTML, CSS, and JavaScript
-                with turn-based logic and dynamic score updates.
+                project demonstrates proficiency in modern frontend development,
+                utilizing React and Vite to create a responsive and interactive
+                personal portfolio
               </p>
               <div>
                 {[
+                  "React",
+                  "Vite",
                   "HTML",
                   "CSS",
                   "JavaScript",
-                  "DOM",
-                  "Algorithms",
                   "UI Updates",
                 ].map((tech, key) => (
                   <span
@@ -161,7 +169,7 @@ export const Projects = () => {
               </div>
               <div className="flex justify between items-center">
                 <a
-                  href="https://github.com/"
+                  href="https://github.com/DaielCode/Daniel-portfolio"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-4-- hover:text-blue-300 trasition-colors"
@@ -172,7 +180,7 @@ export const Projects = () => {
               <div>
                 {" "}
                 <a
-                  href="https://daielcode.github.io/Pig-Game/"
+                  href="https://daielcode.github.io/Daniel-portfolio/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-4-- hover:text-blue-300 trasition-colors"
@@ -193,7 +201,7 @@ export const Projects = () => {
                   <span
                     key={key}
                     className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
-                                    hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition
+                                    hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition whitespace-nowrap
                     "
                   >
                     {tech}
@@ -231,7 +239,7 @@ export const Projects = () => {
                   <span
                     key={key}
                     className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
-                                    hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition
+                                    hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition whitespace-nowrap
                     "
                   >
                     {tech}
