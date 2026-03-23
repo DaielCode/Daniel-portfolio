@@ -48,15 +48,6 @@ const projects = [
     live: "https://daielcode.github.io/Daniel-portfolio/",
   },
   {
-    title: "Bankist App",
-    image: null,
-    description:
-      "Frontend banking UI demonstrating advanced DOM manipulation — user login, money transfers, loan requests, account deletion, and a countdown auto-logout timer. Smooth scroll animations and dynamic UI updates.",
-    tech: ["JavaScript", "DOM", "CSS", "Algorithms"],
-    github: "https://github.com/DaielCode/BankApp",
-    live: "https://daielcode.github.io/BankApp/",
-  },
-  {
     title: "Pig Game",
     image: null,
     description:
