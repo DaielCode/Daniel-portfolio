@@ -1,5 +1,81 @@
 import { RevealOnScroll } from "./sections/RevealOnScroll";
 
+// Список проектів від найпотужнішого до простішого
+const projects = [
+  {
+    title: "YourBank",
+    image: "/Daniel-portfolio/yourbank.png",
+    description:
+      "Full-featured banking app with real Firebase Authentication, Firestore database, instant user-to-user transfers, loan system, and live exchange rates from the European Central Bank. Supports 6 currencies with real-time conversion.",
+    tech: ["JavaScript", "Firebase Auth", "Firestore", "REST API", "CSS"],
+    github: "https://github.com/DaielCode/Advanced_Bank_Aplication",
+    live: "https://yourbankapp.web.app",
+  },
+  {
+    title: "Fishnet",
+    image: "/Daniel-portfolio/fishnet.png",
+    description:
+      "Social platform for fishing enthusiasts built with Next.js and Firebase. Features an interactive map of fishing spots, a social feed, user profiles, admin panel, and multilingual support (PL/EN).",
+    tech: ["Next.js", "React", "Firebase", "Leaflet", "REST API"],
+    github: null,
+    live: "https://fishnetpl.web.app",
+  },
+  {
+    title: "Forkify",
+    image: "/Daniel-portfolio/forkify.png",
+    description:
+      "Recipe search app with access to over 1,000,000 recipes via external API. Search by ingredient, adjust servings dynamically, bookmark favourites, and upload your own recipes. Built with MVC architecture.",
+    tech: ["JavaScript", "REST API", "MVC", "Parcel", "OOP"],
+    github: "https://github.com/DaielCode/forkify-danylo-kutsak",
+    live: "https://daielcode.github.io/forkify-js/",
+  },
+  {
+    title: "Mapty",
+    image: "/Daniel-portfolio/mapty.png",
+    description:
+      "Workout tracker that uses the browser Geolocation API and Leaflet maps. Click anywhere on the map to log a running or cycling session. All workouts are persisted in localStorage and survive page refresh.",
+    tech: ["JavaScript", "Leaflet", "Geolocation API", "OOP", "localStorage"],
+    github: "https://github.com/DaielCode/mapty",
+    live: "https://daielcode.github.io/mapty/",
+  },
+  {
+    title: "React Portfolio",
+    image: null,
+    description:
+      "This portfolio — built with React and Vite. Features scroll animations, a working contact form via EmailJS, responsive design with TailwindCSS, and is continuously updated as new projects are added.",
+    tech: ["React", "Vite", "TailwindCSS", "EmailJS"],
+    github: "https://github.com/DaielCode/Daniel-portfolio",
+    live: "https://daielcode.github.io/Daniel-portfolio/",
+  },
+  {
+    title: "Bankist App",
+    image: null,
+    description:
+      "Frontend banking UI demonstrating advanced DOM manipulation — user login, money transfers, loan requests, account deletion, and a countdown auto-logout timer. Smooth scroll animations and dynamic UI updates.",
+    tech: ["JavaScript", "DOM", "CSS", "Algorithms"],
+    github: "https://github.com/DaielCode/BankApp",
+    live: "https://daielcode.github.io/BankApp/",
+  },
+  {
+    title: "Pig Game",
+    image: null,
+    description:
+      "Classic two-player dice game. Roll to accumulate points, but hold before rolling a 1 or you lose your turn score. Demonstrates event handling, game state management, and dynamic UI updates.",
+    tech: ["JavaScript", "DOM", "CSS"],
+    github: "https://github.com/DaielCode/Pig-Game",
+    live: "https://daielcode.github.io/Pig-Game/",
+  },
+  {
+    title: "Guess My Number",
+    image: null,
+    description:
+      "Number guessing game with a scoring system and highscore tracker. Demonstrates input validation, random number generation, and DOM manipulation.",
+    tech: ["JavaScript", "DOM", "CSS"],
+    github: "https://github.com/DaielCode/Guess-Number",
+    live: "https://daielcode.github.io/Guess-Number/",
+  },
+];
+
 export const Projects = () => {
   return (
     <section
@@ -11,372 +87,63 @@ export const Projects = () => {
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
             Featured Projects
           </h2>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
-              <h3 className="text-xl font-bold mb-2">Bankist App</h3>
-              <p className="text-gray-400 mb-4">
-                A responsive banking application that highlights
-                frontend-oriented full-stack skills, featuring dynamic user
-                interface updates, secure authentication, smooth user
-                experience, and real-time data interactions.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {["HTML", "REST API", "CSS", "DOM", "Algorithms"].map(
-                  (tech, key) => (
-                    <span
-                      key={key}
-                      className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
-                                    hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition break-words
-                    "
-                    >
-                      {tech}
-                    </span>
-                  )
-                )}
-              </div>
-              <div className="flex justify between items-center">
-                <a
-                  href="https://github.com/DaielCode/BankApp"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-4-- hover:text-blue-300 trasition-colors"
-                >
-                  View Project →{" "}
-                </a>
-              </div>
-              <div>
-                {" "}
-                <a
-                  href="https://daielcode.github.io/BankApp/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-4-- hover:text-blue-300 trasition-colors"
-                >
-                  View Project in Browser →{" "}
-                </a>
-              </div>
-            </div>
-            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
-              <h3 className="text-xl font-bold mb-2">
-                Advanced Bank App (In Progress)
-              </h3>
-              <p className="text-gray-400 mb-4">
-                Is a comprehensive demonstration of full-stack development,
-                integrating frontend and backend technologies to create a secure
-                and functional banking application. It showcases proficiency in
-                modern web development practices, including secure
-                authentication, data management, and responsive design.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {[
-                  "MongoDB",
-                  "Node.js",
-                  "Express.JS",
-                  "JWT",
-                  "HTML",
-                  "CSS",
-                  "JavaScript",
-                  "RESTful APIs",
-                  "Security",
-                ].map((tech, key) => (
-                  <span
-                    key={key}
-                    className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
-                                    hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition whitespace-nowrap 
-                    "
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-              <div className="flex justify between items-center">
-                <a
-                  href="https://github.com/DaielCode/Advanced_Bank_Aplication"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-4-- hover:text-blue-300 trasition-colors"
-                >
-                  View Project →{" "}
-                </a>
-              </div>
-            </div>
-            {/* Pig Game */}
-            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all max-w-full">
-              <h3 className="text-xl font-bold mb-2">Pig Game</h3>
-              <p className="text-gray-400 mb-4">
-                Classic two-player Pig Dice game using HTML, CSS, and JavaScript
-                with turn-based logic and dynamic score updates.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {[
-                  "HTML",
-                  "CSS",
-                  "JavaScript",
-                  "DOM",
-                  "Algorithms",
-                  "UI Updates",
-                ].map((tech, key) => (
-                  <span
-                    key={key}
-                    className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition break-words"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-              <div className="flex flex-col sm:flex-row sm:justify-between gap-2">
-                <a
-                  href="https://github.com/DaielCode/Pig-Game"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-400 hover:text-blue-300 transition-colors"
-                >
-                  View Project →
-                </a>
-                <a
-                  href="https://daielcode.github.io/Pig-Game/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-400 hover:text-blue-300 transition-colors"
-                >
-                  View Project in Browser →
-                </a>
-              </div>
-            </div>
-
-            {/* React Portfolio */}
-            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all max-w-full">
-              <h3 className="text-xl font-bold mb-2">React Portfolio</h3>
-              <p className="text-gray-400 mb-4">
-                Project demonstrates proficiency in modern frontend development,
-                utilizing React and Vite to create a responsive and interactive
-                personal portfolio.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {[
-                  "React",
-                  "Vite",
-                  "HTML",
-                  "CSS",
-                  "JavaScript",
-                  "UI Updates",
-                ].map((tech, key) => (
-                  <span
-                    key={key}
-                    className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition break-words"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-              <div className="flex flex-col sm:flex-row sm:justify-between gap-2">
-                <a
-                  href="https://github.com/DaielCode/Daniel-portfolio"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-400 hover:text-blue-300 transition-colors"
-                >
-                  View Project →
-                </a>
-                <a
-                  href="https://daielcode.github.io/Daniel-portfolio/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-400 hover:text-blue-300 transition-colors"
-                >
-                  View Project in Browser →
-                </a>
-              </div>
-            </div>
-
-            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
-              <h3 className="text-xl font-bold mb-2">Guess My Number</h3>
-              <p className="text-gray-400 mb-4">
-                Interactive number guessing game showcasing DOM manipulation,
-                event handling, random number generation, and input validation
-                with JavaScript
-              </p>
-              <div className="flex justify between items-center">
-                {["HTML", "CSS", "JavaScript", "DOM"].map((tech, key) => (
-                  <span
-                    key={key}
-                    className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
-                                    hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition whitespace-nowrap
-                    "
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-              <div className="flex justify between items-center">
-                <a
-                  href="https://github.com/DaielCode/Guess-Number"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-4-- hover:text-blue-300 trasition-colors"
-                >
-                  View Project →{" "}
-                </a>
-              </div>
-              <div>
-                {" "}
-                <a
-                  href="https://daielcode.github.io/Guess-Number/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-4-- hover:text-blue-300 trasition-colors"
-                >
-                  View Project in Browser →{" "}
-                </a>
-              </div>
-            </div>
-            {/* Mapty */}
-            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
-              <img
-                src="/Daniel-portfolio/mapty.png"
-                alt="Mapty app"
-                className="w-full h-40 object-cover rounded-lg mb-4"
-              />
-              <h3 className="text-xl font-bold mb-2">Mapty</h3>
-              <p className="text-gray-400 mb-4">
-                Workout tracker app using geolocation and interactive maps.
-                Log running and cycling workouts by clicking on the map,
-                with data persisted in localStorage.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {["JavaScript", "Leaflet", "Geolocation API", "OOP", "localStorage"].map(
-                  (tech, key) => (
-                    <span
-                      key={key}
-                      className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
-                    >
-                      {tech}
-                    </span>
-                  )
-                )}
-              </div>
-              <div className="flex flex-col sm:flex-row gap-2">
-                <a href="https://github.com/DaielCode/mapty" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors">View Project →</a>
-                <a href="https://daielcode.github.io/mapty/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors">View in Browser →</a>
-              </div>
-            </div>
-
-            {/* Forkify */}
-            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
-              <img
-                src="/Daniel-portfolio/forkify.png"
-                alt="Forkify app"
-                className="w-full h-40 object-cover rounded-lg mb-4"
-              />
-              <h3 className="text-xl font-bold mb-2">Forkify</h3>
-              <p className="text-gray-400 mb-4">
-                Recipe search app with access to over 1,000,000 recipes via
-                external API. Search by ingredient, view cooking steps,
-                adjust servings, and bookmark your favourites.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {["JavaScript", "REST API", "MVC", "Parcel", "OOP"].map(
-                  (tech, key) => (
-                    <span
-                      key={key}
-                      className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
-                    >
-                      {tech}
-                    </span>
-                  )
-                )}
-              </div>
-              <div className="flex flex-col sm:flex-row gap-2">
-                <a href="https://github.com/DaielCode/forkify-danylo-kutsak" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors">View Project →</a>
-                <a href="https://daielcode.github.io/forkify-js/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors">View in Browser →</a>
-              </div>
-            </div>
-
-            {/* Fishnet */}
-            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
-              <img
-                src="/Daniel-portfolio/fishnet.png"
-                alt="Fishnet app"
-                className="w-full h-40 object-cover rounded-lg mb-4"
-              />
-              <h3 className="text-xl font-bold mb-2">Fishnet</h3>
-              <p className="text-gray-400 mb-4">
-                A social platform for fishing enthusiasts. Discover fishing spots
-                on an interactive map, share your catches in the feed, and connect
-                with other anglers. Features user authentication, admin panel, and
-                multilingual support.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {["React", "Next.js", "Firebase", "Leaflet", "REST API"].map(
-                  (tech, key) => (
-                    <span
-                      key={key}
-                      className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
-                    >
-                      {tech}
-                    </span>
-                  )
-                )}
-              </div>
-              <a
-                href="https://fishnetpl.web.app"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-400 hover:text-blue-300 transition-colors"
+            {projects.map((project, index) => (
+              <div
+                key={index}
+                className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all flex flex-col"
               >
-                View Project in Browser →
-              </a>
-            </div>
+                {/* Скріншот (якщо є) */}
+                {project.image && (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-40 object-cover rounded-lg mb-4"
+                  />
+                )}
 
-            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
-              <h3 className="text-xl font-bold mb-2">Bankist DOM</h3>
-              <p className="text-gray-400 mb-4">
-                Bankist-DOM is a banking app demonstrating advanced DOM
-                manipulation, event handling, user authentication, and dynamic
-                UI updates using HTML, CSS, and JavaScript.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {[
-                  "HTML",
-                  "CSS",
-                  "JavaScript",
-                  "DOM",
-                  "Event Handling",
-                  "Data Validation",
-                  "Responsive Design",
-                ].map((tech, key) => (
-                  <span
-                    key={key}
-                    className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
-                                    hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition whitespace-nowrap
-                    "
-                  >
-                    {tech}
-                  </span>
-                ))}
+                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+
+                <p className="text-gray-400 mb-4 flex-1">{project.description}</p>
+
+                {/* Технології */}
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.tech.map((tech, key) => (
+                    <span
+                      key={key}
+                      className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Посилання */}
+                <div className="flex flex-col sm:flex-row gap-2">
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-400 hover:text-blue-300 transition-colors"
+                    >
+                      View Project →
+                    </a>
+                  )}
+                  {project.live && (
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-400 hover:text-blue-300 transition-colors"
+                    >
+                      View in Browser →
+                    </a>
+                  )}
+                </div>
               </div>
-              <div className="flex justify between items-center">
-                <a
-                  href="https://github.com/DaielCode/BankApp"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-4-- hover:text-blue-300 trasition-colors"
-                >
-                  View Project →{" "}
-                </a>
-              </div>
-              <div>
-                {" "}
-                <a
-                  href="https://daielcode.github.io/Bankist-DOM/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-4-- hover:text-blue-300 trasition-colors"
-                >
-                  View Project in Browser →{" "}
-                </a>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </RevealOnScroll>
