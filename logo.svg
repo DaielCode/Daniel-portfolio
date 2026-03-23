@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22d3ee;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Фон — темне коло -->
+  <circle cx="50" cy="50" r="48" fill="#0a0a0a" stroke="url(#grad)" stroke-width="2"/>
+
+  <!-- React орбіта 1 -->
+  <ellipse cx="50" cy="50" rx="38" ry="15" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- React орбіта 2 — повернута на 60° -->
+  <ellipse cx="50" cy="50" rx="38" ry="15" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.5"
+    transform="rotate(60 50 50)"/>
+
+  <!-- React орбіта 3 — повернута на 120° -->
+  <ellipse cx="50" cy="50" rx="38" ry="15" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.5"
+    transform="rotate(120 50 50)"/>
+
+  <!-- Ініціали DK по центру -->
+  <text x="50" y="57" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+    font-weight="700" font-size="22" fill="url(#grad)">DK</text>
+</svg>
