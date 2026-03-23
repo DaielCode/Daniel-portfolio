@@ -5,7 +5,7 @@ export const Footer = () => {
 
         {/* Ліво — логотип */}
         <a href="#home" className="font-mono text-xl font-bold text-white">
-          Danylo <span className="text-blue-500">Kutsak</span>
+          Danylo<span className="text-blue-500"> Kutsak</span>
         </a>
 
         {/* Центр — навігація */}
