@@ -85,7 +85,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               </svg>
             </a>
             <a
-              href="https://www.linkedin.com/in/danylo-kutsak"
+              href="https://www.linkedin.com/in/danylo-kutsak-792b9a358"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-white transition-colors"
