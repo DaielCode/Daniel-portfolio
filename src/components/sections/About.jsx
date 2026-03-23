@@ -33,13 +33,24 @@ export const About = () => {
           </h2>
 
           <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
-            <p className="text-gray-400 mb-6  leading-relaxed font-semibold italic">
-              Passionate developer with expertise in building scalable web
-              applications and creating innovative solutions. With Strong
-              foundation in JavaScript and basic knowledge of CSS and HTML.
-              Skilled in DOM manipulation and API integration. Familiar with
-              fundamental data structures and algorithms with a deep interest in
-              software development.
+            <p className="text-gray-400 mb-6 leading-relaxed font-semibold italic">
+              I'm a self-driven Computer Science student at the University of
+              Łódź who codes because I genuinely enjoy it — not just for the
+              degree. I focus on Frontend with React, but I'm comfortable going
+              fullstack when the project needs it.
+            </p>
+            <p className="text-gray-400 mb-6 leading-relaxed font-semibold italic">
+              I write solid code by hand and know my fundamentals well — and I
+              also know how to work smart with AI tools to move faster without
+              cutting corners. To me, AI is a tool that amplifies good
+              developers, not a replacement for understanding what you're
+              building.
+            </p>
+            <p className="text-gray-400 mb-6 leading-relaxed font-semibold italic">
+              I pick up new technologies fast, work well in a team, and I'm the
+              kind of person who shows up ready to contribute from day one.
+              Looking for a Junior Frontend or Fullstack position where I can
+              grow, ship real features, and be part of something bigger.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

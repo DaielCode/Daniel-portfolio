@@ -23,13 +23,9 @@ export const Home = () => {
                          mb-8 max-w-2xl leading-relaxed
                          font-semibold italic"
             >
-              Proactive and open-minded Computer Science student eager to apply
-              academic knowledge in real-world scenarios and contribute to a
-              dynamic IT team. Actively seeking a JavaScript internship to
-              contribute to a forward-thinking team and gain practical experience
-              in front-end development. Passionate about writing clean,
-              maintainable code and committed to continuous growth within a
-              professional development environment.
+              19-year-old Frontend Developer based in Łódź, Poland. I build
+              clean, responsive web apps with React and JavaScript — and I'm
+              actively looking for my first Junior role in IT.
             </p>
 
             <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
