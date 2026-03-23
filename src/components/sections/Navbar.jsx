@@ -9,8 +9,8 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
     <nav className="fixed top-0 w-full z-40 bg-[rgba(10, 10, 10, 0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center h-16">
-          <a href="#home" className="font-mono text-xl font-bold text-white">
-            {" "}
+          <a href="#home" className="font-mono text-xl font-bold text-white flex items-center gap-2">
+            <img src="/Daniel-portfolio/logo.svg" alt="logo" className="w-8 h-8" />
             Danylo<span className="text-blue-500"> Kutsak</span>
           </a>
           <div
