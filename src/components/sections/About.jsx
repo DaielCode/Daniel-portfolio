@@ -17,7 +17,7 @@ export const About = () => {
     "MongoDB(Basic)",
     "JWT",
     "Git",
-    "Debbuging",
+    "Debugging",
     "JSON",
   ];
 
