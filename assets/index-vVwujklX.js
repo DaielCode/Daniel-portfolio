@@ -81,7 +81,7 @@ Error generating stack: `+e.message+`
                          bg-gradient-to-l from-blue-500 to-purple-600\r
                          inline-block leading-tight bg-clip-text text-transparent`,children:"Welcome to my portfolio"}),g.jsx("p",{className:`text-gray-400 text-base sm:text-lg md:text-xl\r
                          mb-8 max-w-2xl leading-relaxed\r
-                         font-semibold italic`,children:"19-year-old Frontend Developer based in Łódź, Poland. I build clean, responsive web apps with React and JavaScript — and I'm actively looking for my first Junior role in IT."}),g.jsxs("div",{className:"flex flex-col sm:flex-row justify-center md:justify-start gap-4",children:[g.jsx("a",{href:"#projects",className:`bg-blue-500 text-white py-3 px-6 rounded font-medium\r
+                         font-semibold italic`,children:"Frontend Developer based in Łódź, Poland. I build clean, responsive web apps with React and JavaScript — and I'm actively looking for my first Junior role in IT."}),g.jsxs("div",{className:"flex flex-col sm:flex-row justify-center md:justify-start gap-4",children:[g.jsx("a",{href:"#projects",className:`bg-blue-500 text-white py-3 px-6 rounded font-medium\r
                            transition relative overflow-hidden\r
                            hover:-translate-y-0.5\r
                            hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]`,children:"View Projects"}),g.jsx("a",{href:"#contact",className:`border border-blue-500/50 text-blue-500 py-3 px-6\r
